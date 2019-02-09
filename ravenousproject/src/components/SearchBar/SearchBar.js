@@ -8,7 +8,7 @@ const sortByOptions = {
   'Most Reviewed': 'review_count'
 };
 
-class SearchBar extends React.Component() {
+class SearchBar extends React.Component {
   renderSortByOptions() {
     /* This Object.keys return method, allows us to start our iteration by accessing the keys in our object.
     We complete the iteration by using the .map() methond at the end. */
@@ -33,7 +33,7 @@ class SearchBar extends React.Component() {
     <input placeholder="Where?" />
   </div>
   <div className="SearchBar-submit">
-    <a>Let's Go</a>
+    <a href="Search" >Let's Go</a>
   </div>
   </div>
     )
