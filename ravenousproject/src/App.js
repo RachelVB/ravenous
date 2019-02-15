@@ -4,12 +4,29 @@ import BusinessList from './components/BusinessList/BusinessList';
 import SearchBar from './components/SearchBar/SearchBar';
 // import logo from './logo.svg';
 
+const business = {
+  imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
+  name: 'MarginOtto Pizzeria',
+  address: '1010 Paddington Way',
+  city: 'Flavortown',
+  state: 'NY',
+  zipCode: '10101',
+  category: 'Italian',
+  rating: 4.5,
+  reviewCount: 90
+}
+
+const businesses = [business, business, business, business, business, business];
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <h1>ravenous</h1>
-      <BusinessList />
+         {/* Below, in our BusinessList component, this is how we create the propName. 
+        You can see that we've attached our 'businesses' array to this prop name. 
+        In the future, we will call this propname by {this.prop.busiArray} */}
+      <BusinessList businesses={businesses} />
       <SearchBar /> 
       </div>
     );
