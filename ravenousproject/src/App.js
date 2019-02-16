@@ -22,7 +22,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>ravenous</h1>
+        <h1>Ravenous</h1>
         <SearchBar /> 
          {/* Below, in our BusinessList component, this is how we create the propName. 
         You can see that we've attached our 'businesses' array to this prop name. 
