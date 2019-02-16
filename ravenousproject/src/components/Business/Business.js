@@ -1,6 +1,9 @@
 import React from 'react';
 import './business.css';
 
+/* This component will show HOW it will display on the webpage. 
+This compenent only has a impact on what is contained inside the business. 
+Other compenents will grab THIS compenent and use it accordingly. */
 class Business extends React.Component {
   render() {
     return(
