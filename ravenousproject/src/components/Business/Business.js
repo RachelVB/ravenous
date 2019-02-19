@@ -14,14 +14,14 @@ class Business extends React.Component {
     <h2>{this.props.business.thisName}</h2>
     <div className="Business-information">
       <div className="Business-address">
-        <p>{this.props.business.thisAddress}</p>
-        <p>{this.props.business.thisCity}</p>
-        <p>{this.props.business.thisState}{this.props.business.thisZipCode}</p>
+        <p>{this.props.business.address}</p>
+        <p>{this.props.business.city}</p>
+        <p>{this.props.business.state}{this.props.business.zipCode}</p>
       </div>
       <div className="Business-reviews">
-        <h3>{this.props.business.thisCategory}</h3>
-        <h3 className="rating">{this.props.business.thisRating} Stars</h3>
-        <p>{this.props.business.thisReviewCount} reviews</p>
+        <h3>{this.props.business.category}</h3>
+        <h3 className="rating">{`${this.props.business.rating} stars`}</h3>
+        <p>{`${this.props.business.reviewCount} reviews`}</p>
       </div>
     </div>
   </div>
