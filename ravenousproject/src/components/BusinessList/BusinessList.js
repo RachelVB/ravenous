@@ -8,7 +8,7 @@ class BusinessList extends React.Component {
       <div className="BusinessList">
     {
       this.props.businesses.map(function (business) {
-      return <Business business={business} />
+      return <Business key={business.id} business={business} />
       /* Notice how this return statment contains a prop that pulls from our main business component. */
     })
     }
