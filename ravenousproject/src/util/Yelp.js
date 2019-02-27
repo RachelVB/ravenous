@@ -20,7 +20,7 @@ const Yelp = {
             city: business.location.city,
             state: business.location.state,
             zipCode: business.location.zip_code,
-            category: business.category[0].title,
+            categories: business.category[0].title,
             rating: business.rating,
             reviewCount: business.review_count
           };
